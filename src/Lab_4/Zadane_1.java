@@ -16,6 +16,7 @@ public class Zadane_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите число от 0 до 9: ");
+        System.out.println("Ноль");
         Double a = sc.nextDouble();
         sc.close();
         if (a == 6) {
