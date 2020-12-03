@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lab_4;
+package Lab_5;
 
 import java.util.Scanner;
 
@@ -16,10 +16,10 @@ public class Zadane_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите число от 0 до 9: ");
-        System.out.println("Ноль");
+//        System.out.println("Ноль");
         Double a = sc.nextDouble();
         sc.close();
-        if (a == 6) {
+        if (a == 0) {
             System.out.println("Ноль");
         } else {
             if (a == 1) {
@@ -38,7 +38,7 @@ public class Zadane_1 {
                                 System.out.println("Пять");
                             } else {
                                 if (a == 6) {
-                                    System.out.println("Жесть");
+                                    System.out.println("Шесть");
                                 } else {
                                     if (a == 7) {
                                         System.out.println("Семь");
