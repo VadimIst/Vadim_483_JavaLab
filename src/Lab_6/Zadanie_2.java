@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package Lab_6;
-
-import static Lab_6.Zadanie_1.minX;
-
 /**
  *
  * @author User
@@ -14,23 +11,23 @@ import static Lab_6.Zadanie_1.minX;
 public class Zadanie_2 {
     
      public static void sort() {
-        short temp;
-        short[] array = new short[10];
+        float temp;
+        float[] B = new float[25];
         System.out.print("\nИсходный массив: ");
         for (int i = 0; i < 10; i++) {
-            array[i] = (short) Math.round(50 * Math.random());
-            System.out.print(array[i] + ", ");
+            B[i] = (int) Math.round(Math.random()*100-50);
+            System.out.print(B[i] + ", ");
         }
         System.out.print("\nМассив отсортированный: ");
         for (int i = 0; i < 9; i++) {
             for (int j = 9; j > i; j--) {
-                if (array[j - 1] > array[j]) {
-                    temp = array[j];
-                    array[j] = array[j - 1];
-                    array[j - 1] = temp;
+                if (B[j - 1] > B[j]) {
+                    temp = B[j];
+                    B[j] = B[j - 1];
+                    B[j - 1] = temp;
                 }
             }
-            System.out.print(array[i] + ", ");
+            System.out.print(B[i] + ", ");
         }
     }
 public static void main(String[] args) {
