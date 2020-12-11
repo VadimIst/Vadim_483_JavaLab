@@ -12,14 +12,13 @@ package Lab_4;
 public class Zadanie_2 {
     
     public static void main(String[] args) {
-        double s = 0;
+        double a = 0, b = 0;
         for (int x = 1; x <= 10000; x++) {
             if (x % 2 == 0) {
-                s = s - 1 / x;
-                System.out.println(s);} 
+                a += 1 / x;}
             else {
-                s = s + 1 / x;
-                System.out.println(s);}
+                b += 1 / x;}
         }
+        System.out.println(b-a);
     }
 }
