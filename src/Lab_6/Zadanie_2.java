@@ -33,4 +33,4 @@ public class Zadanie_2 {
 public static void main(String[] args) {
         sort();
     }
-}
+}  
