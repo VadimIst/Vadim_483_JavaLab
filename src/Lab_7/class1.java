@@ -24,7 +24,7 @@ public class class1 {
     }
 }
 
-public class class2 extends class1 {
+ class class2 extends class1 {
 
     public void com() {
         System.out.println("Значение закрытого поля\r\n" + "private - a - " + ukaz());

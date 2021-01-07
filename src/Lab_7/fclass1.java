@@ -19,13 +19,13 @@ public class fclass1 {
     }
 }
 
-public class fclass2 extends fclass3 {
+ class fclass2 extends fclass3 {
     public void srt() {
         System.out.println("Класс 2 наследуем от класса 3");
     }
 }
 
-public class fclass3 extends fclass1 {
+ class fclass3 extends fclass1 {
     public void srt() {
         System.out.println("Класс 3 наследуем от класса 1");
     }

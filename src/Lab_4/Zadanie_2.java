@@ -10,15 +10,21 @@ package Lab_4;
  * @author User
  */
 public class Zadanie_2 {
-    
+
     public static void main(String[] args) {
-        double a = 0, b = 0;
-        for (int x = 1; x <= 10000; x++) {
-            if (x % 2 == 0) {
-                a += 1 / x;}
-            else {
-                b += 1 / x;}
+        double a = 0;
+        for (double x = 1; x < 1001; x++) {
+            while (x % 2 == 1) {
+                a = a + 1 / x;
+                break;
+            }
         }
-        System.out.println(b-a);
+        for (double n = 1; n < 1001; n++) {
+            while (n % 2 == 0) {
+                a = a - 1 / n;
+                break;
+            }
+        }
+        System.out.println(a);
     }
 }
